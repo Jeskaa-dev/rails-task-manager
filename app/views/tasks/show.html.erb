@@ -1,0 +1,13 @@
+<div class="container">
+
+  <h2><%= @task.title %></h2>
+  <p><%= @task.details %></p>
+
+
+  <div class="completedmsg">
+    <input type="checkbox" <%=@checked%>> <p>This task is completed <%=params[:completed]%></p>
+  </div>
+  <%= link_to "Edit", edit_task_path%>
+  <a href="/tasks">Back to list</a>
+
+<div>
